@@ -1,14 +1,4 @@
-# Object detection by Opencv
-#### Input image
-
-![](https://github.com/PudPawat/object-detection-by-openCV/blob/main/images/start.jpg?raw=true)
-#### Mask image
-
-![](https://github.com/PudPawat/object-detection-by-openCV/blob/main/images/mask.jpg?raw=true)
-#### Final image
-
-![](https://github.com/PudPawat/object-detection-by-openCV/blob/main/images/final.jpg?raw=true)
-
+# Object detection based on Color by Opencv
 
 ### Algorithm
 

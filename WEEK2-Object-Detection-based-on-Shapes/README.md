@@ -1,10 +1,12 @@
-# Object detection based on Color
+# Object detection based on Shapes
 ### Algorithm
 
-- Using HSV inrange to filter background out;
+- Approximate the arclength of each edge
+- Approximate a shape of a contour
 
 ### How to use the code
 
-- Setting HSV lower bound and Upper bound in (2_1_HSV_inrange.py)
+- Setting HSV lower bound and Upper bound in (1_1_HSV_inrange.py)
 - Replace those value in function img_process
-- set input path 
+- Set input path
+- Run the main code

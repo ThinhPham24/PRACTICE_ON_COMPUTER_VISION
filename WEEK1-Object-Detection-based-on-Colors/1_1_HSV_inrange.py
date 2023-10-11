@@ -1,5 +1,5 @@
 ''' 
-Author: Ms. Pham The Thinh
+Author: MsC. Pham The Thinh
 Title: Tìm các giá trị giới hạn của không gian màu HSV
 '''
 
@@ -89,7 +89,7 @@ The parse_args() method actually returns some data from the options specified, i
 The variable is some form of ‘magic’ that argparse performs for free (i.e. no need to specify which variable that value is stored in). You will also notice that its name matches the string argument given to the method, echo.'''
 
 parser = argparse.ArgumentParser(description='Code for Thresholding Operations using inRange tutorial.')
-parser.add_argument('--path_image', help='Path of detected image', default="C:\\Users\\ptthi\\OneDrive\\Desktop\\PRACTICE_OF_COMPUTER_VISION\\Object-Detection-based-on-Colors\\images\\ballread.png", type=str)
+parser.add_argument('--path_image', help='Path of detected image', default="C:\\Users\\ptthi\\OneDrive\\Desktop\\PRACTICE_ON_COMPUTER_VISION\\WEEK2-Object-Detection-based-on-Shapes\\images\\example.png", type=str)
 args = parser.parse_args()
 #-------------------------------------------------
 # Read image using OpenCV libary: Đọc ảnh sử dụng thư viện của OPENCV

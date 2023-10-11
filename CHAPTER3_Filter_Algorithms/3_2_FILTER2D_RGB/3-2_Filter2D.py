@@ -14,14 +14,17 @@ import matplotlib.pyplot as plt
 
 def main():
 
-	img_path = "C:\\Users\\ptthi\\OneDrive\\Desktop\\PRACTICE_ON_COMPUTER_VISION\\CHAPTER3_Filter_Algorithms\\3-2 Convolution-RGB\\turtle_noise.png"
+	img_path = "C:\\Users\\ptthi\\OneDrive\\Desktop\\PRACTICE_ON_COMPUTER_VISION\\CHAPTER3_Filter_Algorithms\\3_2_FILTER2D_RGB\\turtle_noise.png"
 	img = cv2.imread(img_path, 1) # 1 provides taking img as rgb
+	# image_resize = cv2.resize(img, (640,480), cv2.INTER_AREA)
+	# img = cv2.cvtColor(image_resize, cv2.COLOR_BGR2RGB)
 	img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-
-
-	filter1 = np.array(([0, 0, 0], [0, 1, 0], [0, 0, 0]), np.float32) #linear filter
-
+	filter1 = np.array(([0, 1, 0], [1, -5, 1], [0, 1, 0]), np.float32) #linear filter
+	# output = cv2.filter2D(img, -1, filter1) 
+	# # median_filter = cv2.medianBlur(image_resize,3)
+	# merge_image = np.concatenate((image_resize,output), axis=1)
+	# cv2.imshow("image", merge_image)
+	# cv2.waitKey(0)
 	filter2 = np.array(([1, 1, 1], [1, 1, 1], [1, 1, 1]), np.float32)/9 # 3-by-3 neighborhood avarage filter
 
 	filter4 = np.array(([0, -1, 0], [-1, 5, -1], [0, -1, 0]), np.float32) # 3-by-3 neighborhood sharpening filter

@@ -17,13 +17,27 @@ Numpy is a general-purpose array-processing package. It provides a high-performa
 
 Camera Calibration can be done in a step-by-step approach:
 
-Step 1: First define real world coordinates of 3D points using known size of checkerboard pattern.
+Implementation:
 
-Step 2: Different viewpoints of check-board image is captured.
+''' Input: Asymmetrical circular grid image is used in the code below as input. No measurement of the circular unit size is necessary in       circular grid. Fewer pictures are needed than other objects supported by opencv.
 
-Step 3: findChessboardCorners() is a method in OpenCV and used to find pixel coordinates (u, v) for each 3D point in different images.
+Input images link : https://github.com/PawanKrGunjan/Image-Processing/tree/main/calibrateCamera/Images '''
 
-Step 4: Then calibrateCamera() method is used to find camera parameters.
+Step 1: The opencv and numpy libraries are imported and the termination criteria to stop the iteration (to be used further in code) is declared.
+
+Step 2: A vector for real world coordinates of the circular grid is created. As measurement of actual circular unit is not needed, so vector is appended with random grid values. Also obj_points and img_points vectors are created to store 3D and 2D points of input image.
+
+Step 3: The distorted image is then loaded and a grayscale version of image is created.
+
+Step 4: Either the cv::findChessboardCorners or the cv::findCirclesGrid function can be used, depending on the type of input (chessboard or circular grid) to get the position of pattern by passing the current image and the board size. Boolean value is returned to indicate if the pattern was included in the input. If its true, 3D object points are updated.
+
+Step 5: When multiple images are used as input, similar equations might get created during calibration which might not give optimal corner detection. Hence cv.cornerSubPix() function analyses images and corners to give better results. Since the algorithm is iterative, we must define the termination criteria (such as the number of iterations and/or accuracy). In circular grids, this function is not always necessary.
+
+Step 6: The 2D image points are also updated from the optimal corner values. Then, using a call to drawChessboardCorners() that inputs our image, corner measurements, and points that were detected are drawn and saved as output image.
+
+Step 7: The calibrateCamera() function is called with the required parameters and output is displayed.
+
+Step 8: Finally, the error, the camera matrix, distortion coefficients, rotation matrix and translation matrix is printed.
 
 It will take our calculated (threedpoints, twodpoints, grayColor.shape[::-1], None, None) as parameters and returns list having elements as Camera matrix, Distortion coefficient, Rotation Vectors, and Translation Vectors. 
 

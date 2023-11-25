@@ -27,8 +27,8 @@ def calculate_angle(sp,ep):
     return int(angle) 
 if __name__ == "__main__":
     '''
-    python3 convert_json_labelme2mask_with_angle_fill.py 
-    python convert_json_labelme2mask_with_angle_fill.py
+    python3 convert_json_labelme2mask.py 
+    python convert_json_labelme2mask.py
     '''
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('--path_json', default= "C:\\Users\\ptthi\OneDrive\\Desktop\\Image_processing\\new_data\\new_sub21", type=str, required=False,
@@ -56,7 +56,7 @@ if __name__ == "__main__":
         # out_img_file = osp.join(args.output_dir, "JPEGImages", base + ".jpg")
         #------------Load image, change the name of its image and save it to another folder------------
         print("name image",(path + f"\{image_base}.jpg"))
-        print("number of iamge pluss", (name_base + num))
+        print("number of image pluss", (name_base + num))
         load_image = cv2.imread(path + f"\{image_base}.jpg")
         filename_image = os.path.join(image_savepath, f'{name_base + num}.jpg')
         cv2.imwrite(f"{filename_image}", load_image)

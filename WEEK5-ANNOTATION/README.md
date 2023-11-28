@@ -34,12 +34,21 @@ Finally, we should check the results by using the code "check_only_annotation.py
 
 ## $\color[RGB]{255,0,0}2. Augmentation$
 
-First, We have some augmentation method such as $\color[RGB]{0,255,0}scale$, $\color[RGB]{0,255,0}rotation$, $\color[RGB]{0,255,0}shear$, $\color[RGB]{0,255,0}Gradiennt$, etc. In this tutorial will guide you how to create more database based on augmentation methods. If you think your own dataset need other method, you can add it into our code.
+We have some augmentation method such as $\color[RGB]{0,255,0}scale$, $\color[RGB]{0,255,0}rotation$, $\color[RGB]{0,255,0}shear$, $\color[RGB]{0,255,0}Gradiennt$, etc. In this tutorial will guide you how to create more databases based on augmentation methods. If you think your own dataset need other method, you can add it into our code.
 
 ### Installation
-We have  more 
-[ablualbumentations](https://github.com/albumentations-team/albumentations)
+We have  more librarys to augmentate the database such as [ablualbumentations](https://github.com/albumentations-team/albumentations), [aug](https://github.com/tgilewicz/aug), [aug-tool](https://pypi.org/project/aug-tool/0.0.2/), etc.
 
 ```python
 pip install ablualbumentations
 ```
+```
+pip install aug
+```
+```
+pip install aug-tool==0.0.2
+```
+
+### Step-by-step tutorials
+
+First, 

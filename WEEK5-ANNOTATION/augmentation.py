@@ -76,7 +76,7 @@ if __name__ == "__main__":
     # -----GRADIENT---------
     ratio = 0.2# %
     total_files = len(filenames)
-    remain = int(ration*total_files)
+    remain = int(ratio*total_files)
     for filename in tqdm(random.sample(filenames,remain),total=remain):
         path_img = os.path.join(images_path, filename)
         name = os.path.basename(path_img)
@@ -95,7 +95,7 @@ if __name__ == "__main__":
     filenames = glob.glob(images_path + "/*.*") # RE-LOAD
     ratio = 0.375# %
     total_files = len(filenames)
-    remain = int(ration*total_files)
+    remain = int(ratio*total_files)
     for filename in tqdm(random.sample(filenames,remain),total=remain):
         path_img = os.path.join(images_path, filename)
         name = os.path.basename(path_img)

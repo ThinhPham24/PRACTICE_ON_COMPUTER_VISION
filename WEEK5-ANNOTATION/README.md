@@ -51,4 +51,43 @@ pip install aug-tool==0.0.2
 
 ### Step-by-step tutorials
 
-First, 
+This tutorial includes some augmentation methods like scale, rotation, linear gradients and random contrast,etc.
+
+#### a. Scale method
+
+We should change the $\color[RGB]{0,255,0}paht$  of $\color[RGB]{0,255,0}folder$ of your own dataset in ```scale.py```.
+
+![image](https://github.com/ThinhPham24/PRACTICE_ON_COMPUTER_VISION/assets/58129562/99d026e8-93e2-4d69-acf2-0711385b8de8)
+
+Run this code
+
+```python
+python scale.py
+```
+
+#### b. Rotation method
+
+Remenber that you need to change the path of your own dataset.
+
+```python
+python Rot_aug.py
+```
+
+#### c. Linear Gradient along x, y axis, Random Contrast, Brightness and ColorJitter
+
+Remenber that you need to change the path of your own dataset.
+
+```python
+python augmentation.py
+```
+
+## $\color[RGB]{255,0,0}3. Converting$ $\color[RGB]{255,0,0} DL$ $\color[RGB]{255,0,0} format$ $\color[RGB]{255,0,0} COCO, YOLO format, VOC,etc.$
+
+This tutorial guide us about converting the Mask of th Object to the COCO Instance Segmentation Format.
+
+Run this code
+
+```python
+python mask2coco.py
+```
+

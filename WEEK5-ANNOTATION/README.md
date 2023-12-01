@@ -83,11 +83,22 @@ python augmentation.py
 
 ## $\color[RGB]{255,0,0}3. Converting$ $\color[RGB]{255,0,0} DL$ $\color[RGB]{255,0,0} format$ $\color[RGB]{255,0,0} COCO, YOLO format, VOC,etc.$
 
-This tutorial guide us about converting the Mask of th Object to the COCO Instance Segmentation Format.
+This tutorial guide us about converting the Mask of the Object to the COCO Instance Segmentation Format.
 
 Run this code
 
 ```python
 python mask2coco.py
 ```
+
+Converting the COCO format to YOLO Format. We should change the txt path of output and JSON path of Input in ```main.py``` code in JSON2YOLO FOLDER.
+
+![image](https://github.com/ThinhPham24/PRACTICE_ON_COMPUTER_VISION/assets/58129562/5d0e5cca-8e93-4ae2-81b7-f6fbad03ad97)
+
+
+```python
+python main.py
+```
+
+
 

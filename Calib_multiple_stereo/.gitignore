@@ -1,0 +1,13 @@
+*.pth
+*.h5
+.idea/*
+Calibrated.zip
+maskrcnn/logs/mask_rcnn_orchid_0009_new_18classes.h5
+yolact_edge/weights/yolact_edge_7_10000.pth
+yolact_edge/weights/yolact_edge_9_11785_interrupt.pth
+Calibrated/top/stereoMap.txt
+Calibrated/0degree/stereoMap.txt
+Calibrated/120degree/stereoMap.txt
+Calibrated/240degree/stereoMap.txt
+*.txt
+*.ply
